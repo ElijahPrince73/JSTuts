@@ -60,3 +60,34 @@
 // } else {
 //   console.log('not a number');
 // }
+
+// Boolean Logic and switch
+
+var age = 25
+
+if (age < 20) {
+  console.log("john is a wee lad");
+} else if (age >= 20 && age < 30) {
+  console.log('John is a young man');
+} else {
+  console.log('John is tall lad');
+}
+
+var job = 'teacher';
+
+job = prompt('What does john do')
+
+switch (job) {
+  case 'teacher':
+    console.log('John teaches kids');
+    break;
+  case 'driver':
+    console.log('John drives a cab d');
+    break;
+  case 'cop':
+    console.log('John fights crime');
+    break;
+
+  default:
+    console.log('He does something else');
+}
