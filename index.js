@@ -18,3 +18,22 @@
 // console.log(lasName);
 
 //Operators
+// var now = 2017
+//
+// var birthYear = now - 25;
+//
+// birthYear = now - 26 * 2
+//
+// console.log(birthYear);
+//
+// var ageJohn = 30;
+// var ageMark = 30;
+// ageJohn = ageMark = (3 + 5) * 4 - 6
+//
+// ageJohn++
+// ageMark *= 2;
+// ageMark + ageJohn
+//
+// console.log(ageJohn);
+
+// IF else statements
