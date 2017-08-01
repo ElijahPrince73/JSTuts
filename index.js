@@ -1,14 +1,13 @@
-var name = 'John';
-console.log(name);
-
-var lastName = 'Smith'
-
-console.log(name + " " + lastName);
-
+var name = 'john';
 var age = 26;
 
-console.log(age);
+var job, isMarirred;
 
-var fullAge = true;
+job = 'teacher';
+isMarirred = false;
+console.log(name + ' is a ' + age + ' year old ' + job + ' is he married ' + isMarirred);
 
-console.log(fullAge);
+age = 'thirty six';
+job = 'driver'
+
+console.log(name + ' is a ' + age + ' year old ' + job + ' is he married ' + isMarirred);
