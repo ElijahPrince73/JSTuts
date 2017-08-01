@@ -36,4 +36,27 @@
 //
 // console.log(ageJohn);
 
-// IF else statements
+// IF else statement s
+
+// var name = 'john'
+// var age = 26
+// var isMarirred = 'no';
+//
+// if (isMarirred === 'yes') {
+//   console.log(name + ' is married');
+// } else {
+//   console.log(name + ' is not married');
+// }
+//
+// isMarirred = true
+//
+// if (isMarirred) {
+//   console.log('YES');
+// }
+//
+// //Use this type of operator
+// if (23 === '23') {
+//   console.log('something here');
+// } else {
+//   console.log('not a number');
+// }
