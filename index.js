@@ -63,31 +63,57 @@
 
 // Boolean Logic and switch
 
-var age = 25
+// var age = 25
+//
+// if (age < 20) {
+//   console.log("john is a wee lad");
+// } else if (age >= 20 && age < 30) {
+//   console.log('John is a young man');
+// } else {
+//   console.log('John is tall lad');
+// }
+//
+// var job = 'teacher';
+//
+// job = prompt('What does john do')
+//
+// switch (job) {
+//   case 'teacher':
+//     console.log('John teaches kids');
+//     break;
+//   case 'driver':
+//     console.log('John drives a cab d');
+//     break;
+//   case 'cop':
+//     console.log('John fights crime');
+//     break;
+//
+//   default:
+//     console.log('He does something else');
+// }
 
-if (age < 20) {
-  console.log("john is a wee lad");
-} else if (age >= 20 && age < 30) {
-  console.log('John is a young man');
+var johnHeight = 150;
+var smithHeight = 156;
+var amyHeight = 157;
+
+var johnAge = 12;
+var smithAge = 12;
+var amyAge = 12
+
+var johnScore = (johnHeight + johnAge) * 5;
+var smithScore = (smithAge + smithHeight) * 5;
+var amyScore = (amyAge + amyHeight) * 5;
+
+console.log(johnScore);
+console.log(smithScore);
+console.log(amyScore);
+
+if (johnScore > smithScore && amyScore < johnScore) {
+  console.log('John wins', johnScore);
+} else if (smithScore > johnScore && amyScore < smithScore) {
+  console.log('Smith wins', smithScore);
+} else if (amyScore > johnScore && smithScore < amyScore) {
+  console.log('Amy Wins', amyScore);
 } else {
-  console.log('John is tall lad');
-}
-
-var job = 'teacher';
-
-job = prompt('What does john do')
-
-switch (job) {
-  case 'teacher':
-    console.log('John teaches kids');
-    break;
-  case 'driver':
-    console.log('John drives a cab d');
-    break;
-  case 'cop':
-    console.log('John fights crime');
-    break;
-
-  default:
-    console.log('He does something else');
+  console.log('Its a tie');
 }
