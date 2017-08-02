@@ -92,28 +92,53 @@
 //     console.log('He does something else');
 // }
 
-var johnHeight = 150;
-var smithHeight = 156;
-var amyHeight = 157;
+// Points
+// var johnHeight = 150;
+// var smithHeight = 156;
+// var amyHeight = 157;
+//
+// var johnAge = 12;
+// var smithAge = 12;
+// var amyAge = 12
+//
+// var johnScore = (johnHeight + johnAge) * 5;
+// var smithScore = (smithAge + smithHeight) * 5;
+// var amyScore = (amyAge + amyHeight) * 5;
+//
+// console.log(johnScore);
+// console.log(smithScore);
+// console.log(amyScore);
+//
+// if (johnScore > smithScore && amyScore < johnScore) {
+//   console.log('John wins', johnScore);
+// } else if (smithScore > johnScore && amyScore < smithScore) {
+//   console.log('Smith wins', smithScore);
+// } else if (amyScore > johnScore && smithScore < amyScore) {
+//   console.log('Amy Wins', amyScore);
+// } else {
+//   console.log('Its a tie');
+// }
 
-var johnAge = 12;
-var smithAge = 12;
-var amyAge = 12
-
-var johnScore = (johnHeight + johnAge) * 5;
-var smithScore = (smithAge + smithHeight) * 5;
-var amyScore = (amyAge + amyHeight) * 5;
-
-console.log(johnScore);
-console.log(smithScore);
-console.log(amyScore);
-
-if (johnScore > smithScore && amyScore < johnScore) {
-  console.log('John wins', johnScore);
-} else if (smithScore > johnScore && amyScore < smithScore) {
-  console.log('Smith wins', smithScore);
-} else if (amyScore > johnScore && smithScore < amyScore) {
-  console.log('Amy Wins', amyScore);
-} else {
-  console.log('Its a tie');
+function calculateAge(yearOfBirth) {
+  var age = 2017 - yearOfBirth;
+  return age;
 }
+
+var johnAge = calculateAge(1990)
+var mikeAge = calculateAge(2005)
+var samAge = calculateAge(2000)
+
+function yearsUntilReitirement(name, year) {
+  var age = calculateAge(year)
+  var retirement = 65 - age
+
+  if (retirement >= 0) {
+    console.log(name + ' retires in ' + retirement + ' years');
+  } else {
+    console.log(name + ' has already retired');
+  }
+}
+
+yearsUntilReitirement('john', 1990)
+yearsUntilReitirement('sam', 2000)
+yearsUntilReitirement('oop', 1945)
