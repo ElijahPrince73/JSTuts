@@ -119,27 +119,75 @@
 //   console.log('Its a tie');
 // }
 
-function calculateAge(yearOfBirth) {
-  var age = 2017 - yearOfBirth;
-  return age;
+// function calculateAge(yearOfBirth) {
+//   var age = 2017 - yearOfBirth;
+//   return age;
+// }
+//
+// var johnAge = calculateAge(1990)
+// var mikeAge = calculateAge(2005)
+// var samAge = calculateAge(2000)
+//
+// function yearsUntilReitirement(name, year) {
+//   var age = calculateAge(year)
+//   var retirement = 65 - age
+//
+//   if (retirement >= 0) {
+//     console.log(name + ' retires in ' + retirement + ' years');
+//   } else {
+//     console.log(name + ' has already retired');
+//   }
+//
+// }
+//
+// yearsUntilReitirement('john', 1990)
+// yearsUntilReitirement('sam', 2000)
+// yearsUntilReitirement('oop', 1945)
+
+//function statements and expression
+
+//expression
+function someFun() {}
+//Statement
+var someFun = function(parameter) {
+
 }
 
-var johnAge = calculateAge(1990)
-var mikeAge = calculateAge(2005)
-var samAge = calculateAge(2000)
+//expressions produces a value
 
-function yearsUntilReitirement(name, year) {
-  var age = calculateAge(year)
-  var retirement = 65 - age
+3 + 4;
 
-  if (retirement >= 0) {
-    console.log(name + ' retires in ' + retirement + ' years');
-  } else {
-    console.log(name + ' has already retired');
-  }
+var x = 4
 
+//statements produces a action from something
+if (x === 5) {
+  console.log();
 }
 
-yearsUntilReitirement('john', 1990)
-yearsUntilReitirement('sam', 2000)
-yearsUntilReitirement('oop', 1945)
+
+//Arrays
+
+var names = ['john', 'jane', 'mark'];
+
+var yearsBorn = new Array(1999, 1991, 1965)
+
+console.log(names[2]);
+
+names[1] = 'Ben'
+
+console.log(names);
+
+var john = ['john', 'smith', 1999, 'teacher',
+  false
+]
+
+john.push('blue') // Adds to end of array
+john.unshift('Mr.') // Adds to begining of Array
+john.pop() // Removes from end of Array
+john.shift() // Removes from start of Attay
+alert(john.indexOf('smith')) // Shows location of item in Array but returns value
+console.log(john);
+
+if (john.indexOf('teacher') === -1) {
+  console.log('not a teacher');
+}
