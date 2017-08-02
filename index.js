@@ -147,47 +147,82 @@
 //function statements and expression
 
 //expression
-function someFun() {}
+// function someFun() {}
 //Statement
-var someFun = function(parameter) {
-
-}
+// var someFun = function(parameter) {
+//
+// }
 
 //expressions produces a value
 
-3 + 4;
-
-var x = 4
+// 3 + 4;
+//
+// var x = 4
 
 //statements produces a action from something
-if (x === 5) {
-  console.log();
-}
-
+// if (x === 5) {
+//   console.log();
+// }
 
 //Arrays
 
-var names = ['john', 'jane', 'mark'];
+// var names = ['john', 'jane', 'mark'];
+//
+// var yearsBorn = new Array(1999, 1991, 1965)
+//
+// console.log(names[2]);
+//
+// names[1] = 'Ben'
+//
+// console.log(names);
+//
+// var john = ['john', 'smith', 1999, 'teacher',
+//   false
+// ]
 
-var yearsBorn = new Array(1999, 1991, 1965)
+//Data Mutation
 
-console.log(names[2]);
+// john.push('blue') // Adds to end of array
+// john.unshift('Mr.') // Adds to begining of Array
+// john.pop() // Removes from end of Array
+// john.shift() // Removes from start of Attay
+// alert(john.indexOf('smith')) // Shows location of item in Array but returns value
+// console.log(john);
+//
+// if (john.indexOf('teacher') === -1) {
+//   console.log('not a teacher');
+// }
 
-names[1] = 'Ben'
+// Objects
 
-console.log(names);
+// var john = {
+//   name: 'john',
+//   lastName: 'smith',
+//   yearOfBirth: '1999',
+//   job: 'teacher',
+//   isMarirred: 'false'
+// }
+//
+// console.log(john);
 
-var john = ['john', 'smith', 1999, 'teacher',
-  false
-]
+//2 ways to retrieve and element from an Object
+// console.log(john['lastName']);
+// console.log(john.lastName);
 
-john.push('blue') // Adds to end of array
-john.unshift('Mr.') // Adds to begining of Array
-john.pop() // Removes from end of Array
-john.shift() // Removes from start of Attay
-alert(john.indexOf('smith')) // Shows location of item in Array but returns value
-console.log(john);
+// var xyz = 'job';
+// console.log(john[xyz]);
 
-if (john.indexOf('teacher') === -1) {
-  console.log('not a teacher');
-}
+//Data Mutation
+// john.lastName = 'miller';
+// john.job = 'programmer'
+//
+// console.log(john);
+
+// new Object(); creates a empty object
+// var jane = new Object();
+// jane.name = 'jane'
+// jane.lastName = 'miller';
+// jane['yearOfBirth'] = 1969;
+// jane['isMarirred'] = 'yas'
+//
+// console.log(jane);
