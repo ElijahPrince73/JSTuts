@@ -165,7 +165,6 @@
 // }
 
 //Arrays
-
 // var names = ['john', 'jane', 'mark'];
 //
 // var yearsBorn = new Array(1999, 1991, 1965)
@@ -179,9 +178,7 @@
 // var john = ['john', 'smith', 1999, 'teacher',
 //   false
 // ]
-
 //Data Mutation
-
 // john.push('blue') // Adds to end of array
 // john.unshift('Mr.') // Adds to begining of Array
 // john.pop() // Removes from end of Array
@@ -194,7 +191,6 @@
 // }
 
 // Objects
-
 // var john = {
 //   name: 'john',
 //   lastName: 'smith',
@@ -226,3 +222,47 @@
 // jane['isMarirred'] = 'yas'
 //
 // console.log(jane);
+
+// Objects and Methods
+
+// v1
+/*var john = {
+  name: 'john',
+  lastName: 'smith',
+  yearOfBirth: '1999',
+  job: 'teacher',
+  isMarirred: 'false',
+  family: [
+    'jane', 'mark', 'bob'
+  ],
+  calculateAge: function() {
+    return 2017 - this.yearOfBirth;
+  }
+}
+
+console.log(john.calculateAge());
+
+var age = john.calculateAge();
+
+john.age = age
+
+console.log(john);*/
+
+var john = {
+  name: 'john',
+  lastName: 'smith',
+  yearOfBirth: '1999',
+  job: 'teacher',
+  isMarirred: 'false',
+  family: [
+    'jane', 'mark', 'bob'
+  ],
+  calculateAge: function() {
+    //return 2017 - this.yearOfBirth;
+    this.age = 2017 - this.yearOfBirth
+  }
+}
+
+john.calculateAge();
+
+console.log(john);
