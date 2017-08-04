@@ -311,33 +311,32 @@ console.log(john);*/
 
 //Challenge 2
 
-
-function printFullAge(yearOfBirth) {
-  var ages = [];
-  var fullAges = [];
-
-  for (var i = 0; i < yearOfBirth.length; i++) {
-    ages[i] = 2017 - yearOfBirth[i]
-  }
-
-  for (i = 0; i < ages.length; i++) {
-    if (ages[i] >= 18) {
-      console.log('Person ' + (i + 1) + ' is ' +
-        ages[i] + ' years old, and is of full age');
-      fullAges.push(true)
-    } else {
-      console.log('Person ' + (i + 1) + ' is ' +
-        ages[i] + ' years old, and is NOT of full age');
-      fullAges.push(false)
-    }
-  }
-  return fullAges;
-}
-
-var yearOfBirth = [1996, 1955, 2000, 2012]
-
-var full_1 = printFullAge(yearOfBirth)
-var full_2 = printFullAge([1999, 2001, 2005])
-
-console.log(full_1);
-console.log(full_2);
+// function printFullAge(yearOfBirth) {
+//   var ages = [];
+//   var fullAges = [];
+//
+//   for (var i = 0; i < yearOfBirth.length; i++) {
+//     ages[i] = 2017 - yearOfBirth[i]
+//   }
+//
+//   for (i = 0; i < ages.length; i++) {
+//     if (ages[i] >= 18) {
+//       console.log('Person ' + (i + 1) + ' is ' +
+//         ages[i] + ' years old, and is of full age');
+//       fullAges.push(true)
+//     } else {
+//       console.log('Person ' + (i + 1) + ' is ' +
+//         ages[i] + ' years old, and is NOT of full age');
+//       fullAges.push(false)
+//     }
+//   }
+//   return fullAges;
+// }
+//
+// var yearOfBirth = [1996, 1955, 2000, 2012]
+//
+// var full_1 = printFullAge(yearOfBirth)
+// var full_2 = printFullAge([1999, 2001, 2005])
+//
+// console.log(full_1);
+// console.log(full_2);
