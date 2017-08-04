@@ -248,21 +248,21 @@ john.age = age
 
 console.log(john);*/
 
-var john = {
-  name: 'john',
-  lastName: 'smith',
-  yearOfBirth: '1999',
-  job: 'teacher',
-  isMarirred: 'false',
-  family: [
-    'jane', 'mark', 'bob'
-  ],
-  calculateAge: function() {
-    //return 2017 - this.yearOfBirth;
-    this.age = 2017 - this.yearOfBirth
-  }
-}
-
-john.calculateAge();
-
-console.log(john);
+// var john = {
+//   name: 'john',
+//   lastName: 'smith',
+//   yearOfBirth: '1999',
+//   job: 'teacher',
+//   isMarirred: 'false',
+//   family: [
+//     'jane', 'mark', 'bob'
+//   ],
+//   calculateAge: function() {
+//     //return 2017 - this.yearOfBirth;
+//     this.age = 2017 - this.yearOfBirth
+//   }
+// }
+//
+// john.calculateAge();
+//
+// console.log(john);
