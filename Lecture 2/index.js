@@ -50,3 +50,33 @@ function third() {
 }*/
 
 // Lecture: this keyword
+
+// calculateAge(1996)
+
+// function calculateAge(year) {
+//   console.log(2017 - year);
+//   console.log(this);
+// }
+
+var john = {
+  name: 'john',
+  yearOfBirth: 1990,
+  calculateAge: function() {
+    console.log(this);
+    console.log(2017 - this.yearOfBirth);
+    /* function innerFunction() {
+      console.log(this);
+    }
+    innerFunction();*/
+  }
+}
+
+john.calculateAge()
+
+var mike = {
+  name: 'mike',
+  yearOfBirth: 1995
+}
+
+mike.calculateAge = john.calculateAge;
+mike.calculateAge();
