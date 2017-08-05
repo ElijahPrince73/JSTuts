@@ -58,16 +58,16 @@ function third() {
 //   console.log(this);
 // }
 
-var john = {
+/*var john = {
   name: 'john',
   yearOfBirth: 1990,
   calculateAge: function() {
     console.log(this);
     console.log(2017 - this.yearOfBirth);
-    /* function innerFunction() {
+    function innerFunction() {
       console.log(this);
     }
-    innerFunction();*/
+    innerFunction();
   }
 }
 
@@ -80,3 +80,4 @@ var mike = {
 
 mike.calculateAge = john.calculateAge;
 mike.calculateAge();
+*/
