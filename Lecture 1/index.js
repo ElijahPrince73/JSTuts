@@ -340,3 +340,30 @@ console.log(john);*/
 //
 // console.log(full_1);
 // console.log(full_2);
+
+// var name = 'bbibi'
+//
+// function first() {
+//   var a = 'hello ';
+//   setTimeout(function() {
+//     second();
+//   }, 2000)
+//   var x = a + name
+//   console.log(x);
+// }
+//
+// function second() {
+//   var b = 'hi '
+//   setTimeout(function() {
+//     third();
+//   }, 2000)
+//   var z = b + name
+//   console.log(z);
+// }
+//
+// function third() {
+//   var c = 'hey'
+//   var z = c + name;
+//   console.log(z);
+// }
+// first();
