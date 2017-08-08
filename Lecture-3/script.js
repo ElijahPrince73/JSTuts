@@ -79,27 +79,75 @@ console.log(jane);*/
 
 // Primitive vs Objects
 
-var a = 23;
-
+//Primitives
+/*var a = 23;
 var b = a
-
 a = 46
-
 console.log(a);
 console.log(b);
-
+//Objects
 var obj1 = {
-  name: 'john',
-  age: 26
-}
-
-var obj2 = {
   name: 'john',
   age: 26
 }
 
 var obj2 = obj1;
 
-obj.age = 3
+obj1.age = 30
 
-console.log();
+console.log(obj1.age);
+console.log(obj2.age);*/
+
+//functions
+
+/*var age = 27;
+var obj = {
+  name: 'elijah',
+  city: 'Las Vegas'
+}
+
+function change(a, b) {
+  a = 30
+  b.city = 'LA'
+}
+
+change(age, obj);
+
+console.log(age);
+
+console.log(obj.city);*/
+
+//Lecture: Passing functions as arguments
+
+/*var years = [1990, 1837, 2006, 1996];
+
+function arrayCalc(arr, fn) {
+  var arrRes = [];
+  for (var i = 0; i < arr.length; i++) {
+    arrRes.push(fn(arr[i]));
+  }
+  return arrRes;
+}
+
+function calculateAge(el) {
+  return 2017 - el;
+}
+
+function isFullAge(el) {
+  return el >= 18
+}
+
+function maxHeartRate(el) {
+  if (el >= 18 && el <= 81) {
+    return Math.round(206 - (0.67 * el))
+  } else {
+    return -1;
+  }
+}
+
+var ages = arrayCalc(years, calculateAge);
+var fullAges = arrayCalc(ages, isFullAge)
+var rate = arrayCalc(ages, maxHeartRate)
+console.log(rate);
+console.log(fullAges);
+console.log(ages);*/
