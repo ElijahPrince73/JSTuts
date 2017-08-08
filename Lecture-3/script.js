@@ -151,3 +151,72 @@ var rate = arrayCalc(ages, maxHeartRate)
 console.log(rate);
 console.log(fullAges);
 console.log(ages);*/
+
+//Functions returning functions
+
+/*function interviewQuestion(job) {
+  if (job === 'designer') {
+    return function (name) {
+       console.log(name + ', can you please explain what UX is');
+    }
+  }else if (job === 'teacher') {
+   return function (name) {
+      console.log('What subject do you teach ' + name + '?');
+    }
+  }else {
+    return function (name) {
+      console.log('Hello ' + name + ', what do you do?');
+    }
+  }
+}
+
+function starshipName(starship) {
+  if (starship === 'deathStar') {
+    return function (weapon) {
+      console.log('You own the ' + starship + ' Its weapons are ' + weapon);
+    }
+  }else {
+    return function (weapon) {
+      console.log('You aint shit with your ' + starship + ' and your ' + weapon);
+    }
+  }
+}
+
+starshipName('deathStar')('the planet killer')
+starshipName('millenium falcom')('laser lights')
+interviewQuestion('teacher')('mark')
+interviewQuestion('designer')('rachel')
+interviewQuestion('bum')('bobo')*/
+
+// IIFE
+//keeps data private from being accesed
+/*(function () {
+  var score = Math.random() * 10;
+  console.log(score >- 5);
+})();
+
+(function (goodluck) {
+  var score = Math.random() * 10;
+  console.log(score >- 5 -goodluck);
+})();*/
+
+//Closures
+function retirementAge(retiremntAge) {
+  var a  = ' years left till retiremnt ';
+  return function (yearOfBirth) {
+  var age = 2017 - yearOfBirth
+    console.log((retiremntAge - age)+ a)
+  }
+}
+
+var retiremntUS = retirementAge(66)
+
+var retiremnentGermany = retirementAge(65)
+
+var retirementIceland= retirementAge(67)
+
+retirementIceland(1990)
+retiremnentGermany(1990)
+retirementAge(66)(1996)
+
+//Challenge
