@@ -201,22 +201,35 @@ interviewQuestion('bum')('bobo')*/
 })();*/
 
 //Closures
-function retirementAge(retiremntAge) {
-  var a  = ' years left till retiremnt ';
+/*function retirement(retirementAge) {
+  var a = ' years left until retirement'
   return function (yearOfBirth) {
-  var age = 2017 - yearOfBirth
-    console.log((retiremntAge - age)+ a)
+    var age = 2017 - yearOfBirth
+    console.log((retirementAge - age) + a);
   }
 }
 
-var retiremntUS = retirementAge(66)
+var retirmentUS = retirement(66);
+var retirementGER = retirement(68)
+var retirementIceland = retirement(67)
 
-var retiremnentGermany = retirementAge(65)
-
-var retirementIceland= retirementAge(67)
-
-retirementIceland(1990)
-retiremnentGermany(1990)
-retirementAge(66)(1996)
+retirmentUS(1996)
+retirementGER(1990)
+retirementIceland(1997)*/
 
 //Challenge
+/*function interviewQuestion(job) {
+  return function(name) {
+    if (job === 'designer') {
+      console.log(name + ', can you please explain what UX is');
+    } else if (job === 'teacher') {
+      console.log('What subject do you teach ' + name + '?');
+    } else {
+      console.log('Hello ' + name + ', what do you do?');
+    }
+  }
+}
+
+interviewQuestion('teacher')('mark')
+interviewQuestion('designer')('rachel')
+interviewQuestion('bum')('bobo')*/
