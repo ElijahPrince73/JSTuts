@@ -535,32 +535,32 @@ box66.clickMe()*/
 // johnAthlete5.wonMedal()
 
 //ES6
-class Person6 {
-  constructor(name, yearOfBirth, job) {
-    this.name = name;
-    this.yearOfBirth = yearOfBirth;
-    this.job = job;
-  }
-
-  calcAge() {
-    var age = new Date().getFullYear() - this.yearOfBirth
-    console.log(age);
-  }
-}
-
-class Athlete6 extends Person6 {
-  constructor(name, yearOfBirth, job, games, medals) {
-    super(name, yearOfBirth, job)
-    this.games = games
-    this.medals = medals
-  }
-  wonMedal() {
-    this.medals++;
-    console.log(this.medals);
-  }
-}
-
-const johnAthlete6 = new Athlete6('john', 1990, 'swimmer', 3, 10)
-
-johnAthlete6.wonMedal()
-johnAthlete6.calcAge()
+// class Person6 {
+//   constructor(name, yearOfBirth, job) {
+//     this.name = name;
+//     this.yearOfBirth = yearOfBirth;
+//     this.job = job;
+//   }
+//
+//   calcAge() {
+//     var age = new Date().getFullYear() - this.yearOfBirth
+//     console.log(age);
+//   }
+// }
+//
+// class Athlete6 extends Person6 {
+//   constructor(name, yearOfBirth, job, games, medals) {
+//     super(name, yearOfBirth, job)
+//     this.games = games
+//     this.medals = medals
+//   }
+//   wonMedal() {
+//     this.medals++;
+//     console.log(this.medals);
+//   }
+// }
+//
+// const johnAthlete6 = new Athlete6('john', 1990, 'swimmer', 3, 10)
+//
+// johnAthlete6.wonMedal()
+// johnAthlete6.calcAge()
