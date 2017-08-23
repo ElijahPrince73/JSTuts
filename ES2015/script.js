@@ -564,3 +564,6 @@ box66.clickMe()*/
 //
 // johnAthlete6.wonMedal()
 // johnAthlete6.calcAge()
+
+//////////////////////////////////////////////////////
+//Code Challenge
